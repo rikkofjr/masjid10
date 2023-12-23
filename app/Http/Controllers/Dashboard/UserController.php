@@ -57,7 +57,7 @@ class UserController extends Controller
         $user = User::create($input);
         $user->assignRole($request->input('roles'));
     
-        return redirect()->route('dashboard.users-manajemen.index')
+        return redirect()->route('admin.users.index')
                         ->with('success','User created successfully');
     }
     
@@ -85,7 +85,7 @@ class UserController extends Controller
         $roles = Role::pluck('name','name')->all();
         $userRole = $user->roles->pluck('name','name')->all();
     
-        return view('dashboard.users-manajemen.edit',compact('user','roles','userRole'));
+        return view('dashboard.users-manajemen.edit', compact('user','roles','userRole'));
     }
     
     /**
@@ -117,7 +117,7 @@ class UserController extends Controller
     
         $user->assignRole($request->input('roles'));
     
-        return redirect()->route('dashboard.users-manajemen.index')
+        return redirect()->route('admin.users.index')
                         ->with('success','User updated successfully');
     }
     

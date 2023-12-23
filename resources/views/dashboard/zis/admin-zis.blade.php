@@ -83,7 +83,20 @@
             <div class="card-body">
                 <div class="row">
                     @can('outsource-delete')
-                    bekas zis_standarisasi
+                    
+                    <input type="text" name="" id="" class="form-control">
+
+                    <div class="form-group">
+                        <label for="uang_standarisasi">Uang Standarisasi</label>
+                        <input type="text" name="uang-standarisasi" width="100%" id="" class="form-control">
+                    </div>
+                    Saat ini : 
+                    
+                    <div class="form-group">
+                        <label for="beras_standarisasi">Beras Standarisasi</label>
+                        <input type="text" name="beras_standarisasi" id="" class="form-control">
+                    </div>
+                    Saat ini :
                     @endcan
                 </div>
                 <hr/>

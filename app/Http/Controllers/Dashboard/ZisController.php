@@ -24,6 +24,7 @@ use App\Repositories\ZisRepository;
 
 use App\Models\Zis;
 use App\Models\ZisType;
+use App\Models\ZisStandarisasi;
 use App\Models\MasjidProfile;
 
 class ZisController extends Controller

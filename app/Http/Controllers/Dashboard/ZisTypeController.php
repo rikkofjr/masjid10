@@ -4,9 +4,6 @@ namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\ZisType;
-use App\Models\ZisStandarisasi;
-use App\Models\Zis;
 
 //Importing laravel-permission models
 use Spatie\Permission\Models\Role;
@@ -20,6 +17,13 @@ use DataTables;
 use Ramsey\Uuid\Uuid;
 use DB;
 use Alert;
+
+
+use App\Models\ZisType;
+use App\Models\ZisStandarisasi;
+use App\Models\Zis;
+
+//// Untuk Zis Type dan Stamdarisasi Ziss
 
 class ZisTypeController extends Controller
 {

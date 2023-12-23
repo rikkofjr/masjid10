@@ -1,15 +1,22 @@
 @extends('layouts.dashboard')
 
 @section('mainContent')
-<section class="section">
-<div class="row">
-    <div class="col-lg-12 margin-tb">
-        <div class="pull-left">
-            <h2>Create New User</h2>
-        </div>
-    </div>
-</div>
 
+@section('title')
+Tambah User
+@endsection
+
+@section('titleBar')
+<div class="section-header">
+    <h1>Tambah user</h1>
+    <div class="section-header-breadcrumb">
+		<a class="btn btn-icon icon-left btn-primary" href="{{ route('admin.users.index') }}"> <i class="fas fa-chevron-left"></i> Kembali</a>
+	</div>
+	
+</div>
+@endsection
+
+<section class="section">
 
 @if (count($errors) > 0)
   <div class="alert alert-danger">
